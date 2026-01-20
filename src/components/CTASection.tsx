@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BookingButton, { EmailLink } from "./BookingButton";
 
 export default function CTASection() {
   return (
@@ -24,12 +25,7 @@ export default function CTASection() {
             started.
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <Link
-              href="mailto:evolakinllc@gmail.com?subject=Free Consultation Request"
-              className="rounded-full bg-white px-8 py-4 text-sm font-semibold text-[#16A34A] shadow-sm transition-all hover:bg-slate-50 hover:shadow-md active:scale-[0.98]"
-            >
-              Book a Free Consultation
-            </Link>
+            <BookingButton variant="secondary" />
             <Link
               href="/contact"
               className="rounded-full border-2 border-white/30 px-8 py-4 text-sm font-semibold text-white transition-all hover:border-white/60 hover:bg-white/10"

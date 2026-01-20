@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import BookingButton from "./BookingButton";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -40,12 +41,12 @@ export default function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Link
-            href="mailto:evolakinllc@gmail.com"
-            className="rounded-full bg-[#16A34A] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#15803D] hover:shadow-md"
+          <BookingButton
+            variant="primary"
+            className="hidden px-5 py-2.5 sm:inline-flex"
           >
             Free Consultation
-          </Link>
+          </BookingButton>
 
           {/* Mobile menu button */}
           <button
@@ -93,6 +94,11 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <div className="mt-2">
+              <BookingButton variant="primary" className="w-full">
+                Free Consultation
+              </BookingButton>
+            </div>
           </nav>
         </div>
       )}

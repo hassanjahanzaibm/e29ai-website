@@ -1,13 +1,15 @@
-import type { Metadata } from "next";
-import Link from "next/link";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Contact — e29AI",
-  description:
-    "Get in touch with e29AI. Book a free consultation or send us a message. We respond within one business day.",
-};
+import BookingButton from "../../components/BookingButton";
+import type { Metadata } from "next";
 
 export default function ContactPage() {
+  const handleEmail = () => {
+    const user = "evolakinllc";
+    const domain = "gmail.com";
+    window.location.href = `mailto:${user}@${domain}`;
+  };
+
   return (
     <div>
       <section className="bg-gradient-to-b from-white to-[#F8FAFC] py-16">
@@ -83,7 +85,6 @@ export default function ContactPage() {
                   <option value="">Select a service...</option>
                   <option value="ai-agent">AI Agent or Chatbot</option>
                   <option value="automation">Business Automation</option>
-                  <option value="website">Website or Landing Page</option>
                   <option value="dashboard">Dashboard or Analytics</option>
                   <option value="marketing">Marketing Automation</option>
                   <option value="other">Something else</option>
@@ -123,12 +124,15 @@ export default function ContactPage() {
                 business, explore opportunities, and answer any questions — no
                 strings attached.
               </p>
-              <Link
-                href="mailto:evolakinllc@gmail.com?subject=Free Consultation Request"
-                className="mt-6 inline-flex rounded-full bg-[#16A34A] px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#15803D] hover:shadow-md"
-              >
-                Book Free Consultation
-              </Link>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <BookingButton variant="primary" className="px-6 py-3" />
+                <button
+                  onClick={handleEmail}
+                  className="rounded-full border-2 border-[#E2E8F0] bg-white px-6 py-3 text-sm font-semibold text-[#0B1F3A] transition-all hover:border-[#16A34A] hover:bg-[#16A34A]/5"
+                >
+                  Or Email Us
+                </button>
+              </div>
             </div>
 
             <div className="rounded-2xl border border-[#E2E8F0] bg-white p-8 shadow-sm">
@@ -152,12 +156,12 @@ export default function ContactPage() {
                   </svg>
                   <div>
                     <p className="font-medium text-[#0B1F3A]">Email</p>
-                    <a
-                      href="mailto:evolakinllc@gmail.com"
+                    <button
+                      onClick={handleEmail}
                       className="text-[#16A34A] hover:underline"
                     >
-                      evolakinllc@gmail.com
-                    </a>
+                      Get in touch
+                    </button>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">

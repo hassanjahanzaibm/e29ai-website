@@ -45,11 +45,6 @@ const faqs = [
       "Not at all. We handle all the technical work. You just need to tell us about your business and what you want to achieve.",
   },
   {
-    question: "How much does it cost?",
-    answer:
-      "Projects typically range from $1,500 to $10,000 depending on complexity. We'll give you a clear quote upfront with no hidden fees.",
-  },
-  {
     question: "How long until I see results?",
     answer:
       "Most projects launch in 2-4 weeks. Many clients start seeing time savings and improved efficiency within the first month.",

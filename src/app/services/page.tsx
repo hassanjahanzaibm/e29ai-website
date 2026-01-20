@@ -6,7 +6,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Services — e29AI",
   description:
-    "AI agents, chatbots, automation, web design, and dashboards for growing businesses. See how we can help you save time and grow.",
+    "AI agents, chatbots, automation, and dashboards for growing businesses. See how we can help you save time and grow.",
 };
 
 const detailedServices = [
@@ -33,14 +33,14 @@ const detailedServices = [
     ],
   },
   {
-    title: "Web Design & Development",
+    title: "Data Dashboards & Analytics",
     description:
-      "Modern, fast websites that look great and convert visitors into customers. Built with the latest technology for speed and SEO.",
+      "See your key numbers at a glance. We build clear, real-time dashboards that help you make better decisions faster.",
     benefits: [
-      "Mobile-first responsive design",
-      "Fast loading for better SEO",
-      "Clear calls-to-action",
-      "Easy to update yourself",
+      "Track KPIs in real-time",
+      "Visual reports you can understand",
+      "Connect all your data sources",
+      "Make data-driven decisions",
     ],
   },
 ];
@@ -57,7 +57,7 @@ export default function ServicesPage() {
             AI solutions built for your business.
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#334155]">
-            From AI agents and chatbots to websites and automation — we build
+            From AI agents and chatbots to automation and dashboards — we build
             practical tools that help you grow without the complexity.
           </p>
         </div>
@@ -123,26 +123,6 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Pricing hint */}
-      <section className="mx-auto w-full max-w-[1120px] px-6 py-16">
-        <div className="rounded-2xl border border-[#E2E8F0] bg-white p-10 text-center shadow-sm">
-          <h2 className="text-2xl font-semibold text-[#0B1F3A]">
-            Flexible packages for every budget
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-[#334155]">
-            We offer project-based pricing with no long-term contracts. Most
-            projects range from $1,500 to $10,000 depending on scope. Book a
-            free call to get a custom quote.
-          </p>
-          <Link
-            href="mailto:evolakinllc@gmail.com"
-            className="mt-6 inline-flex rounded-full bg-[#16A34A] px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#15803D] hover:shadow-md"
-          >
-            Get a Free Quote
-          </Link>
         </div>
       </section>
 

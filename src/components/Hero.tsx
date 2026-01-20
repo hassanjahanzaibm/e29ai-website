@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BookingButton from "./BookingButton";
 
 export default function Hero() {
   return (
@@ -30,17 +31,12 @@ export default function Hero() {
             <span className="text-[#16A34A]">Work smarter with AI.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#334155]">
-            We build AI agents, chatbots, automation, and websites for
-            growing businesses. No tech headaches — just practical tools that
-            help you do more with less.
+            We build AI agents, chatbots, and automation for growing businesses.
+            No tech headaches — just practical tools that help you do more with
+            less.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Link
-              href="mailto:evolakinllc@gmail.com?subject=Free Consultation Request"
-              className="rounded-full bg-[#16A34A] px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition-all hover:bg-[#15803D] hover:shadow-md active:scale-[0.98]"
-            >
-              Book a Free Consultation
-            </Link>
+            <BookingButton variant="primary" />
             <Link
               href="/services"
               className="rounded-full border-2 border-[#E2E8F0] bg-white px-7 py-3.5 text-sm font-semibold text-[#0B1F3A] transition-all hover:border-[#16A34A] hover:bg-[#16A34A]/5"
@@ -137,14 +133,6 @@ export default function Hero() {
                 </span>
               </li>
             </ul>
-            <div className="mt-8 rounded-xl bg-[#F8FAFC] p-4 text-center">
-              <p className="text-sm text-[#334155]">
-                <span className="font-semibold text-[#0B1F3A]">
-                  Most projects:
-                </span>{" "}
-                $1,500 - $10,000
-              </p>
-            </div>
           </div>
         </div>
       </div>
