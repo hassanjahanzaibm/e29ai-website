@@ -3,146 +3,131 @@ import BookingButton from "./BookingButton";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-cyan-50">
-      {/* Animated gradient orbs */}
+    <section className="relative overflow-hidden bg-white">
+      {/* Subtle premium accent */}
       <div className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-40 -right-40 h-96 w-96 rounded-full bg-gradient-to-br from-green-400/20 to-cyan-400/20 blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-40 h-96 w-96 rounded-full bg-gradient-to-tr from-blue-400/20 to-purple-400/20 blur-3xl"></div>
+        <div className="absolute right-0 top-0 h-[600px] w-[600px] opacity-[0.03]">
+          <div className="h-full w-full rounded-full bg-gradient-to-br from-emerald-500 to-teal-500 blur-3xl"></div>
+        </div>
       </div>
 
-      {/* Geometric pattern overlay */}
-      <div className="pointer-events-none absolute inset-0 opacity-[0.02]">
+      {/* Elegant grid pattern */}
+      <div className="pointer-events-none absolute inset-0 opacity-[0.015]">
         <div
           className="h-full w-full"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230B1F3A' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230B1F3A' fill-opacity='1'%3E%3Cpath d='M36 30a6 6 0 11-12 0 6 6 0 0112 0z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
           }}
         />
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-[1200px] flex-col gap-12 px-6 py-16 md:flex-row md:items-center md:py-24 lg:py-32">
-        {/* Left content */}
-        <div className="flex-1">
-          <div className="mb-6 inline-flex items-center gap-3">
-            <div className="relative">
-              <span className="text-5xl font-bold tracking-tight text-[#0B1F3A] md:text-6xl lg:text-7xl">
-                e29AI
-              </span>
-              <div className="absolute -inset-2 -z-10 rounded-2xl bg-gradient-to-r from-green-500/10 via-cyan-500/10 to-blue-500/10 blur-xl"></div>
-            </div>
+      <div className="relative mx-auto w-full max-w-[1200px] px-6 py-20 md:py-28 lg:py-36">
+        {/* Centered premium layout */}
+        <div className="mx-auto max-w-4xl text-center">
+          {/* Logo */}
+          <div className="mb-8">
+            <span className="text-5xl font-bold tracking-tight text-[#0B1F3A] md:text-6xl lg:text-7xl">
+              e29AI
+            </span>
           </div>
-          <div className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-green-500/10 to-cyan-500/10 px-5 py-2 backdrop-blur-sm">
-            <div className="h-2 w-2 animate-pulse rounded-full bg-green-500"></div>
-            <p className="text-sm font-semibold text-[#0B1F3A]">
-              Powering Midwest Businesses with AI
+
+          {/* Premium badge */}
+          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-5 py-2">
+            <div className="h-1.5 w-1.5 rounded-full bg-emerald-600"></div>
+            <p className="text-sm font-medium text-emerald-900">
+              Elite AI Solutions for Midwest Businesses
             </p>
           </div>
-          <h1 className="mt-8 text-4xl font-bold leading-tight text-[#0B1F3A] md:text-5xl lg:text-6xl lg:leading-tight">
+
+          {/* Headline */}
+          <h1 className="mb-8 text-4xl font-bold leading-tight tracking-tight text-[#0B1F3A] md:text-5xl lg:text-6xl lg:leading-tight">
             Transform Your Business with
             <br />
-            <span className="bg-gradient-to-r from-green-600 via-cyan-600 to-blue-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
               Intelligent Automation
             </span>
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#475569]">
-            Chicago-based AI solutions for small and medium businesses. We build smart agents,
-            chatbots, and automation tools that save time, cut costs, and drive growth —
-            <strong className="text-[#0B1F3A]"> no technical expertise required</strong>.
+
+          {/* Description */}
+          <p className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-slate-600 md:text-xl">
+            Chicago-based AI consultancy delivering premium automation solutions.
+            We build intelligent agents that save time, reduce costs, and accelerate growth
+            for discerning businesses.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <BookingButton variant="primary" className="shadow-lg shadow-green-500/20" />
+
+          {/* CTA Buttons */}
+          <div className="mb-12 flex flex-wrap items-center justify-center gap-4">
+            <BookingButton variant="primary" className="shadow-lg shadow-emerald-500/20" />
             <Link
               href="/services"
-              className="group rounded-full border-2 border-slate-200 bg-white px-8 py-4 text-sm font-semibold text-[#0B1F3A] transition-all hover:border-green-500/30 hover:bg-green-50/50 hover:shadow-lg"
+              className="group inline-flex items-center gap-2 rounded-full border-2 border-slate-200 bg-white px-8 py-4 text-sm font-semibold text-[#0B1F3A] transition-all hover:border-emerald-200 hover:bg-slate-50"
             >
-              Explore Services
-              <span className="ml-2 inline-block transition-transform group-hover:translate-x-1">→</span>
+              Explore Solutions
+              <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
             </Link>
           </div>
-          <div className="mt-8 flex items-center gap-6 text-sm text-[#64748B]">
+
+          {/* Trust indicators */}
+          <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-slate-500">
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="h-5 w-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>Free consultation</span>
+              <span>Complimentary Consultation</span>
             </div>
             <div className="flex items-center gap-2">
-              <svg className="h-5 w-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="h-5 w-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
-              <span>No commitment</span>
+              <span>No Obligations</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg className="h-5 w-5 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+              </svg>
+              <span>30-Day Launch</span>
             </div>
           </div>
         </div>
 
-        {/* Right card with modern design */}
-        <div className="flex-1">
-          <div className="group relative">
-            {/* Gradient border effect */}
-            <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-green-500 via-cyan-500 to-blue-500 opacity-20 blur transition duration-500 group-hover:opacity-40"></div>
-
-            <div className="relative rounded-3xl border border-slate-200/60 bg-white/80 p-8 shadow-2xl backdrop-blur-sm md:p-10">
-              <div className="mb-2 flex items-center gap-2">
-                <div className="rounded-lg bg-gradient-to-br from-green-500 to-cyan-600 p-2">
-                  <svg className="h-5 w-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <p className="text-lg font-bold text-[#0B1F3A]">
-                  Launch in 30 Days
-                </p>
-              </div>
-              <p className="mb-6 text-sm text-[#64748B]">What you'll have up and running</p>
-
-              <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-green-500 to-cyan-600">
-                    <svg className="h-4 w-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </span>
-                  <span className="flex-1 text-[#334155]">
-                    <strong className="text-[#0B1F3A]">Custom AI Agent</strong> handling customer inquiries and support tasks 24/7
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600">
-                    <svg className="h-4 w-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </span>
-                  <span className="flex-1 text-[#334155]">
-                    <strong className="text-[#0B1F3A]">Smart Automation</strong> saving 10+ hours per week on repetitive tasks
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-blue-500 to-purple-600">
-                    <svg className="h-4 w-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </span>
-                  <span className="flex-1 text-[#334155]">
-                    <strong className="text-[#0B1F3A]">Real-time Dashboard</strong> tracking key metrics and performance insights
-                  </span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-purple-500 to-pink-600">
-                    <svg className="h-4 w-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </span>
-                  <span className="flex-1 text-[#334155]">
-                    <strong className="text-[#0B1F3A]">Growth Strategy</strong> with a clear roadmap for scaling your AI capabilities
-                  </span>
-                </li>
-              </ul>
-
-              <div className="mt-8 rounded-xl bg-gradient-to-r from-green-50 to-cyan-50 p-4">
-                <p className="text-center text-sm font-medium text-[#0B1F3A]">
-                  🚀 Most clients see ROI within the first month
-                </p>
-              </div>
+        {/* Premium features cards */}
+        <div className="mx-auto mt-20 grid max-w-5xl gap-6 md:grid-cols-3">
+          <div className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-emerald-200 hover:shadow-xl">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600">
+              <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
             </div>
+            <h3 className="mb-2 font-semibold text-[#0B1F3A]">Custom AI Agents</h3>
+            <p className="text-sm leading-relaxed text-slate-600">
+              Bespoke automation tailored to your business processes
+            </p>
+          </div>
+
+          <div className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-emerald-200 hover:shadow-xl">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600">
+              <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <h3 className="mb-2 font-semibold text-[#0B1F3A]">Analytics & Insights</h3>
+            <p className="text-sm leading-relaxed text-slate-600">
+              Real-time dashboards tracking your key performance metrics
+            </p>
+          </div>
+
+          <div className="group rounded-2xl border border-slate-200 bg-white p-6 transition-all hover:border-emerald-200 hover:shadow-xl">
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600">
+              <svg className="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 className="mb-2 font-semibold text-[#0B1F3A]">Rapid Deployment</h3>
+            <p className="text-sm leading-relaxed text-slate-600">
+              Live in 30 days with dedicated support and training
+            </p>
           </div>
         </div>
       </div>
