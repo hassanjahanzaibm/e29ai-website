@@ -24,9 +24,9 @@ export default function BookingButton({
 
   const variants = {
     primary:
-      "bg-[#16A34A] text-white shadow-sm hover:bg-[#15803D] hover:shadow-md px-7 py-3.5",
+      "bg-gradient-to-r from-emerald-600 to-teal-600 text-white shadow-lg hover:shadow-xl hover:from-emerald-700 hover:to-teal-700 px-8 py-4",
     secondary:
-      "bg-white text-[#16A34A] shadow-sm hover:bg-slate-50 hover:shadow-md px-8 py-4",
+      "bg-white text-emerald-900 border-2 border-emerald-200 hover:bg-emerald-50 hover:shadow-lg px-8 py-4",
     outline:
       "border-2 border-white/30 text-white hover:border-white/60 hover:bg-white/10 px-8 py-4",
   };
